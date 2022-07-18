@@ -1,11 +1,8 @@
-import React from 'react';
-import './App.css';
-import Form from './components/form';
+import { Header } from "components/header";
+import "./App.css";
 
 function App() {
-  return (
-   <Form/>
-  );
+  return <Header />;
 }
 
 export default App;
