@@ -2,9 +2,10 @@ import { PlayersContext } from "contexts/PlayersContext";
 import { useContext } from "react";
 import { Player } from "types/Player";
 
-export const addPlayer = () => {
+export const useAddPlayer = () => {
   const { players, setPlayers } = useContext(PlayersContext);
   return (newPlayer: Player) => {
-    return [players, newPlayer];
+    const newList:Player[] =[...players, newPlayer]; 
+    return setPlayers(newList);
   };
 };

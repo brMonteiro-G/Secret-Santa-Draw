@@ -7,7 +7,7 @@ export default function AppRouter() {
     <BrowserRouter>
       <PlayersProvider>
         <Routes>
-          <Route path="/" element={Form}></Route>
+          <Route path="/" element={<Form/>}></Route>
         </Routes>
       </PlayersProvider>
     </BrowserRouter>
